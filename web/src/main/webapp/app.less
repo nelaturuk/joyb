@@ -1,0 +1,79 @@
+@import "bower_components/bootstrap/less/bootstrap.less";
+//@import "bower_components/bootstrap/less/theme.less";
+@import "bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "bower_components/font-awesome/fonts";
+
+/* Component LESS */
+@import "joyb.home/joyb.home.less";
+@import "joyb.login/joyb.login.less";
+@import "joyb.common/joyb.common.less";
+@import "joyb.list/joyb.list.less";
+/* Add Component LESS Above */
+
+/* Required for Angular UI Bootstrap */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+body
+    {
+        width:80% !important;
+        margin-left:auto !important;
+        margin-right:auto !important;
+    }
+    
+    .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.modal-content {
+    box-shadow: 0px 10px 50px rgba(0,0,0,0.5) !important;
+    border-radius: 3px;
+
+    .modal-header {
+      padding:0;
+      cursor: move;
+
+      md-toolbar {
+        min-height: 50px;
+
+        .md-toolbar-tools {
+          height: 50px;
+        }
+      }
+    }
+
+    .modal-footer {
+      border:none;
+    }
+  }
+
+/* Personal preference for BS modal.  The LESS below makes the backdrop white and
+   causes the modal to fade in rather than slide in. */
+//@modal-backdrop-bg: white;
+//.modal {
+//	&.fade {
+//		.transition(opacity .3s);
+//	}
+//	&.fade .modal-dialog {
+//		.translate(0,0);
+//	}
+//}

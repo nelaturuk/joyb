@@ -1,0 +1,22 @@
+<div layout="row" layout-xs="column" layout-align="center center">
+    <div flex ng-repeat="card in joybCards">
+        <md-card flex ng-style="{background:card.colorCode}" ng-click="showCard(card)">
+            <md-card-title>
+                <span class="md-headline">{{card.title}}</span>
+            </md-card-title>
+            <md-content layout-padding ng-style="{background:card.colorCode}">
+                <div>Location: {{card.location}}</div>
+                <div>Tags: <a href="#" style="color:black; padding:2px" ng-repeat="tag in card.tags">{{tag}}</a></div>
+            </md-content>
+        </md-card>
+        <md-switch class="md-accent" md-no-ink aria-label="Switch No Ink" layout-align="center center" ng-model="data.cb5">
+        </md-switch>
+    </div>
+    <div flex layout="row" layout-align="center center">
+        <md-button class="md-fab #7B1FA2" aria-label="Add JoYb Card">
+            <md-icon>add</md-icon>
+        </md-button>
+    </div>
+</div>
+<md-content>
+</md-content>
