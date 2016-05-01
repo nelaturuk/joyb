@@ -10,6 +10,42 @@
 // Apply the java plugin to add support for Java
 apply plugin: 'java'
 
+ext.libs = [
+
+   activeMqVersion: '5.10.0',
+   aspectjVersion: '1.8.4',
+   commonsCodecVersion : '1.6',
+   commonsCollectionsVersion : '3.1',
+   commonsDbcpVersion: '1.4',
+   commonsDbUtilsVersion: '1.3',
+   commonsHttpClientVersion : '3.1',
+   commonsIoVersion : '2.0.1',
+   commonsLangVersion : '2.4',
+   commonsNetVersion : '2.0',
+   commonsPoolVersion : '1.5.4',
+   dom4jVersion: '1.6.1',
+   gradleVersion: '2.2.1',
+   groovyVersion: '2.3.9',
+   hibernateCoreVersion: '4.3.8.Final',
+   hibernateValidatorVersion: '5.1.3.Final',
+   jacksonVersion: '2.4.4',
+   javaMailVersion: '1.4.1',
+   jaxenVersion: '1.1.1',
+   jtdsVersion: '1.3.1',
+   logbackVersion: '1.1.2',
+   oracleOdbcVersion: '11.2.0.1.0',
+   postgresJdbcVersion: '9.4.1208',
+   quartzVersion: '2.2.1',
+   springVersion: '4.1.3.RELEASE',
+   springSecurityVersion: '3.2.5.RELEASE',
+   springHateoasVersion: '0.16.0.RELEASE',
+   slf4jVersion: '1.7.10',
+   tomcatVersion: '8.0.15',
+   tomcatFamily: '8.x',
+   xbeanVersion: '3.7',
+   springfoxVersion: '2.3.0'
+]
+
 // In this section you declare where to find the dependencies of your project
 repositories {
     // Use 'jcenter' for resolving your dependencies.
@@ -63,3 +99,5 @@ tomcat {
 
 tomcatRun.contextPath = '/'
 tomcatRunWar.contextPath = '/'
+
+

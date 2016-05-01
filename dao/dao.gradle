@@ -1,0 +1,10 @@
+apply plugin:'java'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile "org.hibernate:hibernate-entitymanager:${rootProject.ext.libs.hibernateCoreVersion}",
+           "org.hibernate:hibernate-validator:${rootProject.ext.libs.hibernateValidatorVersion}"
+}
